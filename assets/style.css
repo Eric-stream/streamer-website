@@ -1,48 +1,142 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #555; /* Medium grey */
-  color: #ffffff;
+/* Base styles and typography */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #2f2f2f; /* Medium grey background */
+  color: #f0f0f0;
   line-height: 1.6;
 }
 
-header {
-  background-color: #444;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 2rem;
+}
+
+/* Header styling */
+header {
+  background-color: #1c1c1c;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #444;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.stream-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+  
 }
 
-main {
-  padding: 2rem;
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff7518;
+  margin-bottom: 1rem;
 }
 
-section {
-  margin-bottom: 2rem;
-}
-
-ul {
+/* Navigation */
+nav ul {
   list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-a {
-  color: #00acee;
+nav a {
   text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-a:hover {
+nav a:hover {
+  color: #ff9900; /* Accent color */
+}
+
+/* Sections */
+.section {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #1c1c1c;
+}
+
+/* Schedule list */
+.schedule-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.schedule-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Stream embed */
+.stream-embed iframe {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.stream-embed p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.stream-embed a {
+  color: #0077ff;
   text-decoration: underline;
 }
 
+.stream-embed a:hover {
+  color: #ff9900;
+}
+
+/* Social links */
+.social-links {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.social-links li {
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  color: #ff9900;
+}
+
+/* Footer */
 footer {
+  background-color: #1c1c1c;
   text-align: center;
-  padding: 1rem;
-  background-color: #444;
-  color: #ccc;
+  padding: 1.5rem 0;
+  color: #bbb;
+  font-size: 0.9rem;
 }
