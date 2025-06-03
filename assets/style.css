@@ -1,13 +1,9 @@
-/* Base styles and typography */
-* {
+/* Base styling */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: 'Roboto', sans-serif;
-  background-color: #2f2f2f; /* Medium grey background */
+  background-color: #1a1a1a;
   color: #f0f0f0;
   line-height: 1.6;
 }
@@ -18,145 +14,109 @@ body {
   padding: 2rem;
 }
 
-/* Header styling */
-header {
-  background-color: #1c1c1c;
-  padding: 1.5rem 0;
-  border-bottom: 3px solid #444;
-}
-
 .header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
-.stream-logo {
-  width: 200px;
-  height: auto;
-  margin-bottom: 1rem;
-  
-}
-
 .site-title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
   color: #ff7518;
-  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
-/* Navigation */
+/* Nav */
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  list-style: none;
   justify-content: center;
+  gap: 2rem;
+  padding: 0;
 }
 
 nav a {
-  text-decoration: none;
   color: #f0f0f0;
+  text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ff9900; /* Accent color */
+  color: #ff9900;
 }
 
 /* Sections */
 .section {
-  background-color: #ffffff;
-  color: #333;
-  border-radius: 8px;
+  background-color: #2f2f2f;
   padding: 2rem;
   margin: 2rem 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff7518;
 }
 
 .section h2 {
-  margin-bottom: 1rem;
-  font-size: 1.75rem;
-  color: #1c1c1c;
+  color: #ff9900;
 }
 
-/* Schedule list */
+/* Schedule */
 .schedule-list {
   list-style: none;
   padding-left: 1rem;
 }
 
-.schedule-list li {
-  margin-bottom: 0.5rem;
-}
-
 /* Stream embed */
 .stream-embed iframe {
   width: 100%;
+  border: none;
   border-radius: 8px;
-}
-
-.stream-embed p {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.stream-embed a {
-  color: #0077ff;
-  text-decoration: underline;
-}
-
-.stream-embed a:hover {
-  color: #ff9900;
 }
 
 /* Social links */
 .social-links {
   list-style: none;
-  padding-left: 1rem;
-
+  padding-left: 0;
 }
 
 .social-links li {
   margin-bottom: 0.5rem;
 }
 
+.social-links a {
+  font-weight: bold;
+  text-decoration: none;
+}
 
+.twitch {
+  color: #9146FF;
+}
+
+.twitter {
+  color: #1DA1F2;
+}
+
+.youtube {
+  color: #FF0000;
+}
+
+.email {
+  color: #00cc99;
+}
 
 .social-links a:hover {
   color: #ff9900;
-
 }
 
 /* Footer */
 footer {
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   color: #bbb;
-  font-size: 0.9rem;
 }
 
-/* Social media colors */
-.twitch {
-  color: #9146FF; 
-  font-weight: bold;/* Twitch purple */
-}
-
-.youtube {
-  color: #FF0000; /* YouTube red */
-  font-weight: bold;
+.banner-image {
   
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 150px;
 }
-
-
-.email {
-  color: #00cc99; /* Email teal */
-  font-weight: bold;
-}
-
-
-
 
